@@ -1,10 +1,27 @@
-torch
+# Core deep learning
+torch>=2.0.0
 numpy
-rouge~=1.0.1
+
+# NLP & Transformers
+transformers>=4.35.0
+sentence-transformers
+huggingface_hub
+
+# Vietnamese NLP
+underthesea
 pyvi
+
+# ROUGE evaluation
+rouge~=1.0.1
+
+# Data handling
 pandas
 scikit-learn
-transformers
-wandb
-underthesea
 tqdm
+openpyxl
+
+# English tokenisation (prepare_data.py)
+nltk
+
+# Experiment tracking
+wandb
