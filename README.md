@@ -41,7 +41,9 @@ HybridMDS/
 │   ├── unique_sents.json
 │   ├── sent_embeddings.pkl              # ModernBERT sentence embeddings
 │   ├── {train,val,test}.src.cleaned
-│   └── {train,val,test}.tgt
+│   ├── {train,val,test}.tgt
+│   ├── load_data_en.py                      # English dataset loader
+│   └── prepare_data.py                      # MultiNews preprocessing + LDA + sentence embeddings
 │
 ├── LLM_prompting/                       # LLM inference & evaluation utilities
 │   ├── LLM_as_judge.py
@@ -55,8 +57,6 @@ HybridMDS/
 │
 │   # Data loading
 ├── load_data.py                         # Vietnamese dataset loader (GraphDataset, SummDataset)
-├── load_data_en.py                      # English dataset loader
-├── prepare_data.py                      # MultiNews preprocessing + LDA + sentence embeddings
 ├── trainLDA.py                          # Train LDA models for VLSP section division
 │
 │   # Training & inference
